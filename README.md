@@ -44,17 +44,12 @@ By the end of this practice, every team member should be comfortable with:
 git-practice/
 │
 ├── index.html
-├── about.html
-├── team.html
-├── contact.html
 │
-├── css/
-│   └── style.css
+├──  style.css
 │
-├── js/
-│   └── script.js
+├──  script.js
 │
-├── images/
+├── assets/
 │
 └── README.md
 ```
