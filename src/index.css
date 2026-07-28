@@ -328,6 +328,58 @@ img {
   padding: 1rem 0 2rem;
 }
 
+#about {
+  padding-top: 2.5rem;
+}
+
+#about .section-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  align-items: flex-start;
+}
+
+#about .section-grid p {
+  max-width: 58ch;
+}
+
+.about-highlights {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.4rem;
+}
+
+.about-highlights article {
+  padding: 1.4rem;
+  border-radius: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: 0 20px 48px rgba(1, 8, 16, 0.32);
+  backdrop-filter: blur(18px);
+  transition: transform 0.35s ease, opacity 0.35s ease;
+  opacity: 0.55;
+  transform: translateY(20px);
+}
+
+.about-highlights article strong {
+  display: block;
+  margin-bottom: 0.75rem;
+  font-size: 1.05rem;
+  color: #ffffff;
+}
+
+.about-highlights article p {
+  margin: 0;
+  color: rgba(245, 247, 251, 0.72);
+  line-height: 1.7;
+}
+
+.about-highlights article.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .section-grid,
 .strip-inner,
 .contact-card {
