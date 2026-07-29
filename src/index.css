@@ -541,3 +541,76 @@ img {
     padding: 1.2rem;
   }
 }
+/* ===========================
+   TEAM SECTION
+=========================== */
+
+.team-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:2rem;
+    margin-top:3rem;
+}
+
+.team-card{
+    background:#ffffff;
+    border-radius:18px;
+    padding:2rem;
+    text-align:center;
+    box-shadow:0 8px 24px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.team-card:hover{
+    transform:translateY(-8px);
+}
+
+.team-card img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    margin-bottom:1rem;
+}
+
+.team-card h3{
+    margin:.5rem 0;
+}
+
+.team-card p{
+    color:#666;
+}
+
+/* ===========================
+   CONTACT FORM
+=========================== */
+
+.contact-form{
+    margin-top:3rem;
+    display:flex;
+    flex-direction:column;
+    gap:1.3rem;
+}
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+}
+
+.form-group label{
+    margin-bottom:.5rem;
+    font-weight:600;
+}
+
+.form-group input,
+.form-group textarea{
+    padding:1rem;
+    border-radius:10px;
+    border:1px solid #d9d9d9;
+    font-size:1rem;
+    outline:none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus{
+    border-color:#4f46e5;
+}
