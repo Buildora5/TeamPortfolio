@@ -2,127 +2,426 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Team Portfolio</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta
+      name="description"
+      content="GitPractice teaches professional Git and GitHub workflows through real team collaboration."
+    />
+    <title>GitPractice — Learn Git Together</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
     <header class="site-header">
-      <div class="header-container">
-        <a class="brand" href="#hero" aria-label="Git Practice home">
-          <span class="brand-mark">&lt;/&gt;</span>
-          <span>GitPractice</span>
-        </a>
-
-        <button
+      <div class="nav container">
+        <a class="brand" href="#hero"
+          ><span><i class="fa-solid fa-code-branch"></i></span>GitPractice</a
+        ><button
           class="menu-toggle"
-          type="button"
-          aria-label="Open navigation menu"
+          aria-label="Open navigation"
           aria-expanded="false"
         >
-          <span></span>
-          <span></span>
-          <span></span>
+          <i class="fa-solid fa-bars"></i>
         </button>
-
-        <nav class="site-nav" aria-label="Main navigation">
-          <a class="nav-link active" href="#hero">Home</a>
-          <a class="nav-link" href="#about">About</a>
-          <a class="nav-link" href="#features">Features</a>
-          <a class="nav-link" href="#team">Team</a>
-          <a class="nav-link nav-button" href="#contact">Contact us</a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a class="active" href="#hero">Home</a><a href="#about">About</a
+          ><a href="#features">Features</a><a href="#team">Team</a
+          ><a class="nav-contact" href="#contact"
+            >Contact us <i class="fa-solid fa-arrow-up-right-from-square"></i
+          ></a>
         </nav>
       </div>
     </header>
-
-    <!doctype html>
-    <html lang="en">
-      <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./index.css" />
-      </head>
-      <body>
-        <section id="hero" class="hero-section">
-          <div class="hero-container">
-            <div class="hero-content">
-              <p class="eyebrow">
-                <span></span>
-                Learn. Build. Collaborate.
-              </p>
-
-              <h1>
-                Build better projects
-                <span>together.</span>
-              </h1>
-
-              <p class="hero-description">
-                A hands-on space for our team to learn Git, GitHub, pull
-                requests, code reviews, and real collaboration workflows.
-              </p>
-
-              <div class="hero-actions">
-                <a class="primary-button" href="#about">Explore our journey</a>
-                <a class="secondary-button" href="#team">
-                  Meet the team <span>→</span>
-                </a>
-              </div>
-
-              <div class="hero-stats">
-                <div>
-                  <strong>5</strong>
-                  <span>Team members</span>
-                </div>
-                <div>
-                  <strong>10+</strong>
-                  <span>Pull requests</span>
-                </div>
-                <div>
-                  <strong>1</strong>
-                  <span>Shared goal</span>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="hero-visual"
-              aria-label="Illustration of a Git workflow"
-            >
-              <div class="visual-glow"></div>
-
-              <div class="workflow-card">
-                <div class="card-top">
-                  <span class="status-dot"></span>
-                  <span>team-workflow</span>
-                  <span class="card-dots">•••</span>
-                </div>
-
-                <div class="branch-line">
-                  <span class="branch-node node-main"></span>
-                  <span class="branch-label">main</span>
-                </div>
-
-                <div class="branch-line feature-line">
-                  <span class="branch-node node-feature"></span>
-                  <span class="branch-label">feature/hero</span>
-                  <span class="merge-badge">Merged ✓</span>
-                </div>
-
-                <div class="commit-row">
-                  <span class="commit-icon">✓</span>
-                  <div>
-                    <strong>Create professional hero section</strong>
-                    <small>Ready for review</small>
-                  </div>
-                </div>
-              </div>
-
-              <div class="floating-tag tag-one">Pull Request</div>
-              <div class="floating-tag tag-two">Code Review</div>
+    <main>
+      <section id="hero" class="hero">
+        <div class="glow glow-one"></div>
+        <div class="glow glow-two"></div>
+        <div class="hero-grid container">
+          <div class="hero-copy reveal">
+            <p class="eyebrow"><span></span> A hands-on Git practice project</p>
+            <h1>
+              Master Git &amp; GitHub through <em>real team collaboration.</em>
+            </h1>
+            <p>
+              Build the habits professional engineering teams rely on—from
+              meaningful commits and branches to pull requests, reviews, and
+              confident merges.
+            </p>
+            <div class="actions">
+              <a class="button primary ripple" href="#about"
+                >Start Learning <i class="fa-solid fa-arrow-right"></i></a
+              ><a
+                class="button secondary"
+                href="https://github.com"
+                target="_blank"
+                rel="noreferrer"
+                >View Repository <i class="fa-brands fa-github"></i
+              ></a>
             </div>
           </div>
-        </section>
-      </body>
-    </html>
+          <div class="hero-visual reveal">
+            <div class="repo-card">
+              <div class="repo-top">
+                <span class="dot"></span><span>gitpractice / team-project</span
+                ><i class="fa-solid fa-ellipsis"></i>
+              </div>
+              <div class="repo-title">
+                <span><i class="fa-solid fa-code-branch"></i></span>
+                <div>
+                  <b>feature/hero-section</b><small>Ready to merge</small>
+                </div>
+                <em>OPEN PR</em>
+              </div>
+              <div class="commit-list">
+                <p>
+                  <i class="fa-solid fa-circle-check"></i> Create responsive
+                  hero layout <time>2m</time>
+                </p>
+                <p>
+                  <i class="fa-solid fa-circle-check"></i> Add navigation
+                  interactions <time>8m</time>
+                </p>
+                <p>
+                  <i class="fa-solid fa-code-pull-request"></i> Request team
+                  review <time>now</time>
+                </p>
+              </div>
+              <div class="merge-row">
+                <span><i class="fa-solid fa-check"></i></span>
+                <p>
+                  <b>Approved by the team</b
+                  ><small>Ready to merge into main</small>
+                </p>
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+            <div class="float-pill pill-one">
+              <i class="fa-solid fa-code-pull-request"></i> Pull request
+            </div>
+            <div class="float-pill pill-two">
+              <i class="fa-solid fa-users"></i> Team review
+            </div>
+          </div>
+        </div>
+        <a class="scroll-cue" href="#about"
+          >Scroll to explore <i class="fa-solid fa-arrow-down"></i
+        ></a>
+      </section>
+
+      <section id="about" class="section about">
+        <div class="container">
+          <div class="heading reveal">
+            <p class="eyebrow"><span></span> Why GitPractice</p>
+            <h2>Learn the workflow behind great software.</h2>
+            <p>
+              Git is more than a tool—it is how modern teams make progress
+              together, keep work safe, and turn individual effort into shared
+              outcomes.
+            </p>
+          </div>
+          <div class="about-cards">
+            <article class="info-card reveal">
+              <span class="icon"><i class="fa-solid fa-bullseye"></i></span>
+              <h3>Project objective</h3>
+              <p>
+                Practice a complete, professional Git workflow in a supportive
+                team environment before the work gets high stakes.
+              </p>
+            </article>
+            <article class="info-card reveal">
+              <span class="icon"><i class="fa-solid fa-code-branch"></i></span>
+              <h3>Why Git matters</h3>
+              <p>
+                Track every change, experiment without fear, and maintain a
+                trustworthy history of your work.
+              </p>
+            </article>
+            <article class="info-card reveal">
+              <span class="icon"><i class="fa-solid fa-people-group"></i></span>
+              <h3>Why collaboration wins</h3>
+              <p>
+                Share context, invite better feedback, and deliver work that is
+                stronger because it was made together.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section features">
+        <div class="container">
+          <div class="heading reveal">
+            <p class="eyebrow"><span></span> Build real confidence</p>
+            <h2>Every essential skill,<br />in one shared workspace.</h2>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card reveal">
+              <i class="fa-solid fa-code-branch"></i>
+              <h3>Branching</h3>
+              <p>
+                Keep each improvement focused and independent with clear,
+                purposeful branches.
+              </p>
+            </article>
+            <article class="feature-card reveal">
+              <i class="fa-solid fa-code-pull-request"></i>
+              <h3>Pull Requests</h3>
+              <p>
+                Propose changes transparently and bring your teammates into the
+                conversation.
+              </p>
+            </article>
+            <article class="feature-card reveal">
+              <i class="fa-solid fa-code-compare"></i>
+              <h3>Merge Conflicts</h3>
+              <p>
+                Understand conflicts and resolve them calmly with confidence and
+                care.
+              </p>
+            </article>
+            <article class="feature-card reveal">
+              <i class="fa-solid fa-comments"></i>
+              <h3>Code Reviews</h3>
+              <p>
+                Give useful feedback, learn from others, and raise the quality
+                of every change.
+              </p>
+            </article>
+            <article class="feature-card reveal">
+              <i class="fa-solid fa-circle-dot"></i>
+              <h3>GitHub Issues</h3>
+              <p>
+                Turn ideas and bugs into visible, actionable work for the entire
+                team.
+              </p>
+            </article>
+            <article class="feature-card reveal">
+              <i class="fa-solid fa-table-columns"></i>
+              <h3>Project Boards</h3>
+              <p>
+                Plan, prioritize, and keep your work moving with a shared view
+                of progress.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="workflow" class="section workflow">
+        <div class="container">
+          <div class="heading center reveal">
+            <p class="eyebrow">
+              <span></span> From idea to impact <span></span>
+            </p>
+            <h2>A workflow that keeps everyone in sync.</h2>
+            <p>Small, clear steps make collaboration feel simple.</p>
+          </div>
+          <div class="workflow-track">
+            <article class="step reveal">
+              <b>01</b><i class="fa-solid fa-circle-dot"></i>
+              <h3>Create Issue</h3>
+            </article>
+            <span class="arrow">→</span>
+            <article class="step reveal">
+              <b>02</b><i class="fa-solid fa-code-branch"></i>
+              <h3>Create Branch</h3>
+            </article>
+            <span class="arrow">→</span>
+            <article class="step reveal">
+              <b>03</b><i class="fa-solid fa-laptop-code"></i>
+              <h3>Develop Feature</h3>
+            </article>
+            <span class="arrow">→</span>
+            <article class="step reveal">
+              <b>04</b><i class="fa-solid fa-check"></i>
+              <h3>Commit Changes</h3>
+            </article>
+            <span class="arrow">→</span>
+            <article class="step reveal">
+              <b>05</b><i class="fa-solid fa-cloud-arrow-up"></i>
+              <h3>Push Branch</h3>
+            </article>
+            <span class="arrow">→</span>
+            <article class="step reveal">
+              <b>06</b><i class="fa-solid fa-code-pull-request"></i>
+              <h3>Open Pull Request</h3>
+            </article>
+            <span class="arrow">→</span>
+            <article class="step reveal">
+              <b>07</b><i class="fa-solid fa-comments"></i>
+              <h3>Code Review</h3>
+            </article>
+            <span class="arrow">→</span>
+            <article class="step reveal">
+              <b>08</b><i class="fa-solid fa-code-merge"></i>
+              <h3>Merge into Main</h3>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="team" class="section team">
+        <div class="container">
+          <div class="heading reveal">
+            <p class="eyebrow"><span></span> Our collaborators</p>
+            <h2>Meet the people behind the commits.</h2>
+          </div>
+          <div class="team-grid">
+            <article class="member reveal">
+              <div class="avatar a1">AS</div>
+              <h3>Alex Sharma</h3>
+              <p>Project Lead</p>
+              <div>
+                <a href="#contact" aria-label="Alex's GitHub"
+                  ><i class="fa-brands fa-github"></i></a
+                ><a href="#contact" aria-label="Alex's LinkedIn"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+              </div>
+            </article>
+            <article class="member reveal">
+              <div class="avatar a2">PM</div>
+              <h3>Priya Mehta</h3>
+              <p>Frontend Developer</p>
+              <div>
+                <a href="#contact"><i class="fa-brands fa-github"></i></a
+                ><a href="#contact"><i class="fa-brands fa-linkedin-in"></i></a>
+              </div>
+            </article>
+            <article class="member reveal">
+              <div class="avatar a3">RK</div>
+              <h3>Rohan Kumar</h3>
+              <p>Backend Developer</p>
+              <div>
+                <a href="#contact"><i class="fa-brands fa-github"></i></a
+                ><a href="#contact"><i class="fa-brands fa-linkedin-in"></i></a>
+              </div>
+            </article>
+            <article class="member reveal">
+              <div class="avatar a4">SK</div>
+              <h3>Sana Khan</h3>
+              <p>UI/UX Designer</p>
+              <div>
+                <a href="#contact"><i class="fa-brands fa-github"></i></a
+                ><a href="#contact"><i class="fa-brands fa-linkedin-in"></i></a>
+              </div>
+            </article>
+            <article class="member reveal">
+              <div class="avatar a5">DV</div>
+              <h3>Dev Verma</h3>
+              <p>Git Workflow Lead</p>
+              <div>
+                <a href="#contact"><i class="fa-brands fa-github"></i></a
+                ><a href="#contact"><i class="fa-brands fa-linkedin-in"></i></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="stats" class="stats-section">
+        <div class="stats container">
+          <article class="stat reveal">
+            <i class="fa-solid fa-users"></i><strong data-count="5">0</strong
+            ><span>Team Members</span>
+          </article>
+          <article class="stat reveal">
+            <i class="fa-solid fa-code-commit"></i
+            ><strong data-count="20" data-suffix="+">0</strong
+            ><span>Git Commits</span>
+          </article>
+          <article class="stat reveal">
+            <i class="fa-solid fa-code-pull-request"></i
+            ><strong data-count="15">0</strong><span>Pull Requests</span>
+          </article>
+          <article class="stat reveal">
+            <i class="fa-solid fa-circle-dot"></i
+            ><strong data-count="10">0</strong><span>GitHub Issues</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="container contact-grid">
+          <div class="contact-copy reveal">
+            <p class="eyebrow"><span></span> Let’s collaborate</p>
+            <h2>Ready to start your Git journey?</h2>
+            <p>
+              Join the practice, ask a question, or share an idea. Great
+              collaboration starts with a simple hello.
+            </p>
+            <a href="mailto:hello@gitpractice.dev"
+              ><i class="fa-solid fa-envelope"></i> hello@gitpractice.dev</a
+            ><a href="https://github.com" target="_blank" rel="noreferrer"
+              ><i class="fa-brands fa-github"></i> github.com/gitpractice</a
+            >
+          </div>
+          <form class="contact-form reveal">
+            <label
+              >Name<input
+                type="text"
+                name="name"
+                autocomplete="name"
+                placeholder="Your name"
+                required /></label
+            ><label
+              >Email<input
+                type="email"
+                name="email"
+                autocomplete="email"
+                placeholder="you@example.com"
+                required /></label
+            ><label
+              >Message<textarea
+                name="message"
+                rows="4"
+                placeholder="How can we help?"
+                required
+              ></textarea></label
+            ><button class="button primary ripple" type="submit">
+              Send message <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <p class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer container">
+        <div>
+          <a class="brand" href="#hero"
+            ><span><i class="fa-solid fa-code-branch"></i></span>GitPractice</a
+          >
+          <p>Built for learning Git &amp; GitHub collaboration.</p>
+        </div>
+        <div class="quick">
+          <b>Quick links</b><a href="#about">About</a
+          ><a href="#features">Features</a><a href="#workflow">Workflow</a>
+        </div>
+        <div class="social">
+          <a href="https://github.com" aria-label="GitHub"
+            ><i class="fa-brands fa-github"></i></a
+          ><a href="#contact" aria-label="LinkedIn"
+            ><i class="fa-brands fa-linkedin-in"></i></a
+          ><a href="mailto:hello@gitpractice.dev" aria-label="Email"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+        </div>
+      </div>
+      <div class="copyright container">
+        © 2026 GitPractice. All rights reserved.
+        <a href="#hero">Back to top ↑</a>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
   </body>
 </html>
