@@ -481,9 +481,14 @@ p {
   gap: 17px;
   margin-top: 50px;
 }
+.feature-library-link {
+  margin-top: 10px;
+}
 .feature-card {
   min-height: 210px;
   padding: 26px;
+  color: inherit;
+  text-decoration: none;
 }
 .feature-icon {
   display: flex;
