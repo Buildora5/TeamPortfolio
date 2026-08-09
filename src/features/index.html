@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Practical Git and GitHub lessons for students.">
+  <title>GitPractice | Collaboration skills</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="../home/index.html" aria-label="GitPractice home"><span class="brand-mark">⌘</span>GitPractice</a>
+    <nav aria-label="Primary navigation"><a href="../home/index.html">Home</a><a href="../index.html#about">About</a><a class="active" href="index.html">Features</a><a href="../index.html#team">Team</a></nav>
+    <a class="header-button" href="#learning-path">Start learning <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Build real confidence</p>
+      <div class="hero-copy">
+        <h1>Every essential GitHub skill,<br>in one shared workspace.</h1>
+        <p>Learn the collaboration habits used by real software teams. Each lesson explains the idea, gives you safe commands to run, and ends with a practical exercise.</p>
+      </div>
+      <div class="git-reminder"><strong>Git</strong> tracks versions on your computer. <strong>GitHub</strong> hosts Git repositories online and adds teamwork tools.</div>
+    </section>
+
+    <section id="learning-path" class="skills-section" aria-labelledby="skills-title">
+      <div class="section-heading"><div><p class="eyebrow">Your collaboration toolkit</p><h2 id="skills-title">Choose a skill to practise</h2></div><label class="search"><span aria-hidden="true">⌕</span><input id="feature-search" type="search" placeholder="Search a lesson" aria-label="Search lessons"></label></div>
+      <div id="feature-grid" class="feature-grid">
+        <a class="feature-card" href="details.html?feature=branching" data-search="branch branching git branch checkout switch feature work isolation">
+          <span class="card-icon">⑂</span><span class="level">Foundation</span><h3>Branching</h3><p>Keep each improvement focused and independent with purpose-built branches.</p><span class="card-link">Learn branching <b>→</b></span>
+        </a>
+        <a class="feature-card" href="details.html?feature=pull-requests" data-search="pull request pr github collaboration review merge">
+          <span class="card-icon">⇄</span><span class="level">Collaboration</span><h3>Pull Requests</h3><p>Propose changes transparently and bring your teammates into the conversation.</p><span class="card-link">Open pull requests <b>→</b></span>
+        </a>
+        <a class="feature-card" href="details.html?feature=merge-conflicts" data-search="merge conflict resolve git merge rebase">
+          <span class="card-icon">↯</span><span class="level">Problem solving</span><h3>Merge Conflicts</h3><p>Understand conflicts and resolve them calmly with confidence and care.</p><span class="card-link">Resolve conflicts <b>→</b></span>
+        </a>
+        <a class="feature-card" href="details.html?feature=code-reviews" data-search="code reviews review feedback github pull request quality">
+          <span class="card-icon">☁</span><span class="level">Quality</span><h3>Code Reviews</h3><p>Give useful feedback, learn from others, and raise the quality of every change.</p><span class="card-link">Review better <b>→</b></span>
+        </a>
+        <a class="feature-card" href="details.html?feature=github-issues" data-search="github issues issue bug task labels milestones">
+          <span class="card-icon">●</span><span class="level">Planning</span><h3>GitHub Issues</h3><p>Turn ideas and bugs into visible, actionable work for the entire team.</p><span class="card-link">Manage issues <b>→</b></span>
+        </a>
+        <a class="feature-card" href="details.html?feature=project-boards" data-search="project boards github projects kanban task planning">
+          <span class="card-icon">▣</span><span class="level">Workflow</span><h3>Project Boards</h3><p>Plan, prioritize, and keep your work moving with a shared view of progress.</p><span class="card-link">Plan work <b>→</b></span>
+        </a>
+      </div>
+      <p id="empty-state" class="empty-state" hidden>No lesson matches that search. Try “branch”, “review”, or “issues”.</p>
+    </section>
+
+    <section class="practice-banner">
+      <div><p class="eyebrow">Learn by doing</p><h2>Small commits. Clear communication. Strong teams.</h2></div>
+      <a href="details.html?feature=branching" class="primary-button">Begin the first lesson <span>→</span></a>
+    </section>
+  </main>
+  <footer>GitPractice · Learn Git locally, collaborate confidently on GitHub.</footer>
+</body>
+</html>
